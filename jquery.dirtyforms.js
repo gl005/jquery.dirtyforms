@@ -523,7 +523,7 @@ License MIT
         }
 
         // Callback for page access in current state
-        $(document).trigger('defer.dirtyforms');
+        $(document).trigger('defer.dirtyforms', $element);
 
         if (eventType == 'beforeunload') {
             dirtylog('Returning to beforeunload browser handler with: ' + dirtyForms.message);
